@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smēķēšanas problēmas skolā</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b366f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .card h3 {
+            margin: 0;
+        }
+
+        .card-text {
+            display: none;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .card.active .card-text {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Smēķēšanas problēmas skolā</h1>
+        <p class="subtitle">Darbu pildīja Darina Kožemjakina, Anastasija Kokale, Dmitrijs Botikovs</p>
+
+        <h2>Skolēnu piedāvātie risinājumi</h2>
+
+        <div class="grid">
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Pirmais risinājums</h3>
+                <div class="card-text">
+                    Skolā vajadzētu vairāk runāt par to, kā smēķēšana ilgtermiņā ietekmē veselību.
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Otrais risinājums</h3>
+                <div class="card-text">
+                    Būtu labi, ja starpbrīžos un pēc stundām būtu vairāk aizraujošu aktivitāšu.
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Trešais risinājums</h3>
+                <div class="card-text">
+                    Skolotājiem un vecākiem vajadzētu vairāk sarunāties ar skolēniem par smēķēšanas ietekmi.
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Ceturtais risinājums</h3>
+                <div class="card-text">
+                    Skolas teritorijā vajadzētu būt stingrākai kontrolei, lai smēķētāji saprastu, ka tas nav pieņemami.
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Piektais risinājums</h3>
+                <div class="card-text">
+                    Skolai vajadzētu organizēt atbalsta grupas skolēniem, kuri vēlas atmest smēķēšanu.
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Sestais risinājums</h3>
+                <div class="card-text">
+                    Skolas vidē vairāk jāpopularizē veselīgs dzīvesveids un veiksmīgu cilvēku stāsti.
+                </div>
+            </div>
+        </div>
+
+        <h2>Skolotājas piedāvātie risinājumi</h2>
+
+        <div class="grid">
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Pirmais risinājums</h3>
+                <div class="card-text">
+                    Skolā jāorganizē izglītojošas lekcijas par smēķēšanas kaitīgumu.
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Otrais risinājums</h3>
+                <div class="card-text">
+                    Jāievieš stingrāka kontrole un sodi par smēķēšanu skolas teritorijā.
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Trešais risinājums</h3>
+                <div class="card-text">
+                    Jāveicina veselīgs dzīvesveids, piedāvājot vairāk sporta aktivitāšu.
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Ceturtais risinājums</h3>
+                <div class="card-text">
+                    Skolai jāsadarbojas ar vecākiem, lai kopīgi atturētu skolēnus no smēķēšanas.
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Piektais risinājums</h3>
+                <div class="card-text">
+                    Jāizveido atbalsta grupas un konsultācijas tiem, kuri vēlas atmest smēķēšanu.
+                </div>
+            </div>
+
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Sestais risinājums</h3>
+                <div class="card-text">
+                    Skolā jāveido pozitīva vide, kur smēķēšana nav populāra un netiek uzskatīta par stilīgu.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleCard(card) {
+            card.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
